@@ -5,7 +5,7 @@ Esse projeto temos como exemplo uma api de carros.
 Temos algumas situações mapeadas no nosso mock que ao registrar algumas massas em específico a gente consegue um determinado valor de resposta.
 
 
-## Exemplos de massas abaix:
+## Exemplos de massas abaixo:
 
 - Cadastro de veículo: Se o cadastro de veículo for igual a um "fusca" no parâmetro "model". = O mock tem que responder 201
 - Cadastro de veículo: Se o cadastro de veículof for igual a um "up tsi" no parâmetro "model" = O mock tem que responder 500
