@@ -1,0 +1,24 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/api/cars",
+      "bodyPatterns": [
+        {
+            "matchesJsonPath": "$[?(@.brand)]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.model == 'up tsi')]"
+        },
+        {
+            "matchesJsonPath": "$[?(@.year)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 500,
+      "body": "{ \"message\": \"Internal server error: model 'up tsi' is not allowed.\" }",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }

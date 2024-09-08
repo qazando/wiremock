@@ -1,0 +1,13 @@
+{
+    "request": {
+      "method": "GET",
+      "url": "/api/cars"
+    },
+    "response": {
+      "status": 200,
+      "bodyFileName": "cars.json",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }

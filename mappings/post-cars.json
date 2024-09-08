@@ -1,0 +1,24 @@
+{
+    "request": {
+      "method": "POST",
+      "url": "/api/cars",
+      "bodyPatterns": [
+        {
+          "matchesJsonPath": "$[?(@.brand)]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.model == 'fusca')]"
+        },
+        {
+          "matchesJsonPath": "$[?(@.year)]"
+        }
+      ]
+    },
+    "response": {
+      "status": 201,
+      "body": "{ \"message\": \"Car successfully registered!\", \"carId\": 6 }",
+      "headers": {
+        "Content-Type": "application/json"
+      }
+    }
+  }
